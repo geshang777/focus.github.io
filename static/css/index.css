@@ -115,13 +115,19 @@ body {
 }
 
 .results-carousel .item {
-  margin: 5px;
-  overflow: hidden;
-  border: 1px solid #bbb;
-  border-radius: 10px;
-  padding: 0;
-  font-size: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* 确保每张图片占满容器 */
 }
+
+.results-carousel img {
+  max-width: 100%;
+  height: auto; /* 保持图片比例 */
+  display: block;
+  margin: 0 auto;
+}
+
 
 .results-carousel video {
   margin: 0;
