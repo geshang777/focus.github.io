@@ -35,7 +35,14 @@ body {
   max-height: parent;
 
 }
-
+.publication-venue-container {
+  display: flex;         /* 启用 Flexbox 布局 */
+  justify-content: center; /* 水平居中 */
+  align-items: center;   /* 垂直居中 */
+  text-align: center;    /* 确保文本内容居中 */
+  margin-top: 1rem;      /* 添加顶部间距 */
+  margin-bottom: 1rem;   /* 添加底部间距 */
+}
 .publication-venue {
   text-align: center;
   font-size: 1.2rem; /* 调整字体大小 */
