@@ -37,6 +37,7 @@ body {
 }
 
 .publication-venue {
+  text-align: center;
   font-size: 1.2rem; /* 调整字体大小 */
   font-weight: bold; /* 加粗 */
   color: #555; /* 设置颜色为灰色 */
