@@ -29,6 +29,10 @@ body {
 
 
 .publication-title {
+  white-space: nowrap; /* 禁止文本换行 */
+  text-align: center; /* 居中对齐 */
+  width: 100%; /* 确保容器占满整个页面 */
+  overflow: hidden; /* 防止超出内容 */
 }
 
 .publication-banner {
