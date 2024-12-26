@@ -36,6 +36,13 @@ body {
 
 }
 
+.publication-venue {
+  font-size: 1.2rem; /* 调整字体大小 */
+  font-weight: bold; /* 加粗 */
+  color: #555; /* 设置颜色为灰色 */
+  margin-bottom: 1rem; /* 增加与其他部分的间距 */
+}
+
 .publication-banner video {
   position: relative;
   left: auto;
