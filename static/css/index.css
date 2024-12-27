@@ -34,10 +34,10 @@ body {
 .svg-container {
   display: inline-block;     /* 确保与文字在同一行 */
   vertical-align: middle;    /* 垂直对齐 */
-  width: 2.0em;              /* 控制 SVG 的宽度 */
-  height: 2.0em;             /* 控制 SVG 的高度 */
-  margin-left: -0.5em;       /* 减小与左侧文字的间距 */
-  margin-right: -0.5em;      /* 减小与右侧文字的间距 */
+  width: 3.0em;              /* 控制 SVG 的宽度 */
+  height: 3.0em;             /* 控制 SVG 的高度 */
+  margin-left: -1.5em;       /* 减小与左侧文字的间距 */
+  margin-right: -1.5em;      /* 减小与右侧文字的间距 */
 }
 
 

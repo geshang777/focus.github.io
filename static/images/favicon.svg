@@ -10,8 +10,8 @@
         <feMergeNode in="SourceGraphic" />
       </feMerge>
 
-      <!-- 阴影效果 -->
-      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="black" flood-opacity="0.5" />
+      <!-- 加强阴影效果 -->
+      <feDropShadow dx="4" dy="4" stdDeviation="6" flood-color="black" flood-opacity="0.6" />
     </filter>
   </defs>
 
