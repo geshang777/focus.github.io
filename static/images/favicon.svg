@@ -1,20 +1,42 @@
 <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-  <!-- 定义发光效果 -->
+  <!-- 定义发光和阴影效果 -->
   <defs>
+    <!-- 发光效果 -->
     <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-      <!-- 模糊效果 -->
       <feGaussianBlur stdDeviation="4" result="blurred" />
-      <!-- 增强亮度 -->
       <feMerge>
         <feMergeNode in="blurred" />
         <feMergeNode in="blurred" />
         <feMergeNode in="SourceGraphic" />
       </feMerge>
     </filter>
+
+    <!-- 阴影效果 -->
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="3" dy="3" stdDeviation="5" flood-color="rgba(0, 0, 0, 0.5)" />
+    </filter>
   </defs>
 
-  <!-- 透明背景，移除黑色背景部分 -->
-
   <!-- 发光圆环 -->
-  <circle cx="100" cy="100" r="60" fill="none" stroke="white" stroke-width="10" filter="url(#glow)" />
+  <circle
+    cx="100"
+    cy="100"
+    r="60"
+    fill="none"
+    stroke="white"
+    stroke-width="15"        <!-- 圆环粗细 -->
+    filter="url(#glow)"      <!-- 应用发光效果 -->
+  />
+
+  <!-- 阴影圆环 -->
+  <circle
+    cx="100"
+    cy="100"
+    r="60"
+    fill="none"
+    stroke="white"
+    stroke-width="15"
+    filter="url(#shadow)"    <!-- 应用阴影效果 -->
+    opacity="0.5"           <!-- 控制阴影的透明度 -->
+  />
 </svg>
