@@ -3,15 +3,15 @@
   <defs>
     <filter id="glow-shadow" x="-50%" y="-50%" width="200%" height="200%">
       <!-- 发光效果 -->
-      <feGaussianBlur stdDeviation="6" result="blurred" />
+      <feGaussianBlur stdDeviation="5" result="blurred" />
       <feMerge>
         <feMergeNode in="blurred" />
         <feMergeNode in="blurred" />
         <feMergeNode in="SourceGraphic" />
       </feMerge>
 
-      <!-- 加强阴影效果 -->
-      <feDropShadow dx="4" dy="4" stdDeviation="6" flood-color="black" flood-opacity="0.8" />
+      <!-- 阴影效果 -->
+      <feDropShadow dx="3" dy="3" stdDeviation="5" flood-color="#5B9BD5" flood-opacity="0.6" />
     </filter>
   </defs>
 
