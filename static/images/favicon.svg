@@ -3,18 +3,18 @@
   <defs>
     <filter id="glow-shadow" x="-50%" y="-50%" width="200%" height="200%">
       <!-- 发光效果 -->
-      <feGaussianBlur stdDeviation="8" result="blurred" />
+      <feGaussianBlur stdDeviation="6" result="blurred" />
       <feMerge>
         <feMergeNode in="blurred" />
         <feMergeNode in="blurred" />
         <feMergeNode in="SourceGraphic" />
       </feMerge>
 
-      <!-- 阴影效果 -->
-      <feDropShadow dx="4" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.4" />
+      <!-- 加强阴影效果 -->
+      <feDropShadow dx="4" dy="4" stdDeviation="6" flood-color="black" flood-opacity="0.9" />
     </filter>
   </defs>
 
   <!-- 圆环 -->
-  <circle cx="100" cy="100" r="60" fill="none" stroke="#002FA7" stroke-width="20" filter="url(#glow-shadow)" />
+  <circle cx="100" cy="100" r="60" fill="none" stroke="white" stroke-width="20" filter="url(#glow-shadow)" />
 </svg>
