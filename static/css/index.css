@@ -31,6 +31,13 @@ body {
 .publication-title {
 }
 
+.svg-container {
+  display: inline-block;    /* 保证图片与文字在同一行 */
+  vertical-align: middle;   /* 保证图片与文字垂直居中 */
+  width: 1em;               /* 宽度匹配字体大小 */
+  height: 1em;              /* 高度匹配字体大小 */
+}
+
 .publication-banner {
   max-height: parent;
 
