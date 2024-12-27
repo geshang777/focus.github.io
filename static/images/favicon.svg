@@ -11,7 +11,7 @@
       </feMerge>
 
       <!-- 加强阴影效果 -->
-      <feDropShadow dx="4" dy="4" stdDeviation="6" flood-color="black" flood-opacity="0.6" />
+      <feDropShadow dx="4" dy="4" stdDeviation="6" flood-color="black" flood-opacity="0.8" />
     </filter>
   </defs>
 
